@@ -1,0 +1,24 @@
+<section>
+	<div class="main" data-bind="foreach: data">
+		<div class="dayof100-card">
+			<div class="card-header">
+				<span class="title-text" data-bind="text: dayof100"></span>
+			</div>
+			<hr>
+			<div class="card-body">	
+				<div class="card-details">
+					<span class="description" data-bind="text: description"></span>						
+					<a  class="project-link" data-bind="attr:{href: project.url}, text: project.displayText" target="_blank"></a>
+				</div>
+				<div class="card-image">
+					<img  class="image-link" data-bind="attr:{src: image.url}, alt: image.displayText">					
+			    </div>
+			</div>	
+			<hr>
+			<div class="card-footer">
+				<a class="external-link" data-bind="attr:{href: external.url}, text: external.displayText" target="_blank"></a>		
+                <span class="title-date" data-bind="text: date"></span>					
+			</div>	
+		</div>	
+	</div>
+</section>	
