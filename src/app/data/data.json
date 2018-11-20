@@ -1,8 +1,8 @@
     {"data": {
         "round": "Round 1",
         "days": [{
-				"dayof100": "Day 12 of 100",
-				"date": "11/20/2018",
+				"dayof100": "Day 10/11/12/13/14 of 100",
+				"date": "11/17/2018 - 11/21/2018",
 				"description": "Created #100daysofcode page created.",
 				"image": {
 					"url": "https://via.placeholder.com/150",
@@ -17,64 +17,16 @@
 					"displayText": "https://freecodecamp.org"
 				}
 			},{
-				"dayof100": "Day 11 of 100",
-				"date": "11/19/2018",
+				"dayof100": "Day 7/8/9 of 100",
+				"date": "11/14/2018 - 11/16/2018",
 				"description": "Created #100daysofcode page created.",
 				"image": {
 					"url": "https://via.placeholder.com/150",
 					"displayText": "Image"
 				},
 				"project": {
-					"url": "http://codepen.io",
-					"displayText": "http://codepen.io"
-				},
-				"external": {
-					"url": "https://freecodecamp.org",
-					"displayText": "https://freecodecamp.org"
-				}
-			},{
-				"dayof100": "Day 10 of 100",
-				"date": "11/18/2018",
-				"description": "Created #100daysofcode page created.",
-				"image": {
-					"url": "https://via.placeholder.com/150",
-					"displayText": "Image"
-				},
-				"project": {
-					"url": "http://codepen.io",
-					"displayText": "http://codepen.io"
-				},
-				"external": {
-					"url": "https://freecodecamp.org",
-					"displayText": "https://freecodecamp.org"
-				}
-			},{
-				"dayof100": "Day 9 of 100",
-				"date": "11/17/2018",
-				"description": "Created #100daysofcode page created",
-				"image": {
-					"url": "https://via.placeholder.com/150",
-					"displayText": "Image"
-				},
-				"project": {
-					"url": "http://codepen.io",
-					"displayText": "http://codepen.io"
-				},
-				"external": {
-					"url": "https://freecodecamp.org",
-					"displayText": "https://freecodecamp.org"
-				}
-			},{
-				"dayof100": "Day 8 of 100",
-				"date": "11/16/2018",
-				"description": "Created #100daysofcode page created.",
-				"image": {
-					"url": "https://via.placeholder.com/150",
-					"displayText": "Image"
-				},
-				"project": {
-					"url": "http://codepen.io",
-					"displayText": "http://codepen.io"
+					"url": "http://codepen.io/magnusram05/full/jQBPvb",
+					"displayText": "Surver Form"
 				},
 				"external": {
 					"url": "https://freecodecamp.org",
