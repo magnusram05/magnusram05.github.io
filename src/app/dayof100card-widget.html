@@ -1,8 +1,11 @@
 <section>
-	<div class="main" data-bind="foreach: data">
-		<div class="dayof100-card">
-			<div class="card-header">
-				<span class="title-text" data-bind="text: dayof100"></span>
+	<div class="main" data-bind="foreach: days">
+		<div class="dayof100-card" data-bind="attr:{id : $parent.id($index())}">
+			<div data-bind="css: { 	cardHeaderToday: $index() === 0, cardHeader: $index() > 0}">	
+			    <!-- ko if: ($index() === 0) -->
+				<i class="material-icons" style="float: left;">today</i>	
+				<!-- /ko -->				
+				<span class="title-text" data-bind="text: dayof100"></span>							
 			</div>
 			<hr>
 			<div class="card-body">	
@@ -16,7 +19,7 @@
 			</div>	
 			<hr>
 			<div class="card-footer">
-				<a class="external-link" data-bind="attr:{href: external.url}, text: external.displayText" target="_blank"></a>		
+				<a class="external-link" data-bind="attr:{href: external.url}, text: external.displayText" target="_blank"></a>	
                 <span class="title-date" data-bind="text: date"></span>					
 			</div>	
 		</div>	

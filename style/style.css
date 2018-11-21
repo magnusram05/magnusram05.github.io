@@ -48,8 +48,17 @@ body{
 	margin-bottom: 10px;
 }
 
-.card-header{
+.cardHeader{
 	background: lightblue;
+	height: 40px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	margin: 0px;
+	padding: 10px;
+}
+
+.cardHeaderToday {
+	background: hsl(210, 100%, 70%);
 	height: 40px;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
