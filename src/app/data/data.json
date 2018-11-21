@@ -9,12 +9,12 @@
 					"displayText": "Image"
 				},
 				"project": {
-					"url": "http://codepen.io",
-					"displayText": "http://codepen.io"
+					"url": "https://github.com/magnusram05/magnusram05.github.io",
+					"displayText": "#100daysofcode - Blog"
 				},
 				"external": {
-					"url": "https://freecodecamp.org",
-					"displayText": "https://freecodecamp.org"
+					"url": "https://pages.github.com/",
+					"displayText": "GitHub Pages"
 				}
 			},{
 				"dayof100": "Day 7/8/9 of 100",
@@ -30,7 +30,7 @@
 				},
 				"external": {
 					"url": "https://freecodecamp.org",
-					"displayText": "https://freecodecamp.org"
+					"displayText": "freeCodeCamp.org"
 				}
 			}
 		]
