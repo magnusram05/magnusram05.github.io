@@ -16,6 +16,7 @@ body{
 
 .header-title-desc{
 	grid-area: "header-title";
+	justify-self: end;
 }
 .header-title-name{
 	grid-area: "header-name";
