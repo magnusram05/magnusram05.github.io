@@ -3,7 +3,7 @@
         "days": [{
 				"dayof100": "Day 10/11/12/13/14 of 100",
 				"date": "11/17/2018 - 11/21/2018",
-				"description": "Created #100daysofcode page created.",
+				"description": "Created #100daysofcode blog site and static hosted in GitHub Pages.",
 				"image": {
 					"url": "https://via.placeholder.com/150",
 					"displayText": "Image"
