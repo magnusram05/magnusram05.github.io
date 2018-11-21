@@ -1,11 +1,12 @@
 body{
 	margin: 0px;
-	padding: 0px;	
+	padding: 0px;
+	background-image: linear-gradient(45deg, #861657, #FFA69E); 
 }
 .header {
 	height: 30px;
-	background-color: black;
-	color: white;	
+	background-image: linear-gradient(#9FA4C4, #B3CDD1); 
+	color: black;	
 	font-size: 24px;
 	padding: 10px;	
 	display: grid;
@@ -30,30 +31,30 @@ body{
    background-color:black;
    opacity: 0.9;
 }*/
-.main{
-	background-color: white;
-	max-width: 620px;
-	margin: auto;
-	height: 480px;
+.main{	
+	max-width: 720px;
 	text-align: center;
-	padding: 20px;
+	padding: 20px;	
+	height: 100%;
+	margin: auto;
+	height: 100vh;
 }
 .dayof100-card{
 	margin: auto;
-	border-radius: 16px;
-	-webkit-box-shadow: 2px 2px 7px 5px rgba(240,232,240,0.37);
+/*	border-radius: 16px;
+*/	/*-webkit-box-shadow: 2px 2px 7px 5px rgba(240,232,240,0.37);
 	-moz-box-shadow: 2px 2px 7px 5px rgba(240,232,240,0.37);
-	box-shadow: 2px 2px 7px 5px rgba(240,232,240,0.37);	
+	box-shadow: 2px 2px 7px 5px rgba(240,232,240,0.37);	*/
 	font-family: 'Noto Sans SC', sans-serif;
-	border: 1px solid lightblue;
-	margin-bottom: 10px;
+/*	border: 1px solid white;
+*/	margin-bottom: 10px;	
 }
 
 .cardHeader{
 	background: lightblue;
 	height: 40px;
-	border-top-left-radius: 16px;
-	border-top-right-radius: 16px;
+	/*border-top-left-radius: 16px;
+	border-top-right-radius: 16px;*/
 	margin: 0px;
 	padding: 10px;
 }
@@ -61,8 +62,8 @@ body{
 .cardHeaderToday {
 	background: hsl(210, 100%, 70%);
 	height: 40px;
-	border-top-left-radius: 16px;
-	border-top-right-radius: 16px;
+	/*border-top-left-radius: 16px;
+	border-top-right-radius: 16px;*/
 	margin: 0px;
 	padding: 10px;
 }
@@ -81,6 +82,7 @@ hr{
 }
 
 .card-body{
+	background-color: white;
 	height: 100px;
 	padding: 10px;
 	max-height: 100px;
@@ -133,6 +135,7 @@ hr{
 .card-footer{
 	height: 25px;	
 	padding: 10px;
+	background-color: white;
 }
 
 @media only screen and (max-width: 420px){
