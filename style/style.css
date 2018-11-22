@@ -1,8 +1,11 @@
+html{
+	min-height: 100%;
+}
 body{
 	margin: 0px;
 	padding: 0px;
-	background-image: linear-gradient(45deg, #861657, #FFA69E); 	
-	position: absolute;
+	background-image: linear-gradient(45deg, #861657, #FFA69E);	
+	height: '-webkit-fill-available';
 }
 .header {
 	height: 30px;
@@ -24,13 +27,6 @@ body{
 	grid-area: "header-name";
 }
 
-.footer {
-   position:relative;
-   bottom:0;
-   width:100%;
-   height:60px;   
-   background-image: linear-gradient(#9FA4C4, #B3CDD1);   
-}
 .main{	
 	max-width: 720px;
 	text-align: center;
