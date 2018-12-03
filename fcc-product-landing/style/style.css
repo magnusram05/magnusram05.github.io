@@ -1,3 +1,4 @@
+
 html{
 	margin: 0px;
 	padding: 0px;
@@ -46,14 +47,30 @@ footer {
 	font-weight: bold;
 	color: #28343b;	
 }
-.main-header{
+.header-strip{
+	display: flex; 
+	align-items: flex-end; 
+	text-align: right;
+	background-color: #eee;
+	color:#28343b;
+}
+.header-strip-logo{
+	width: 60%;
+	text-align: left;
+	font-size: 32px;
+	font-weight: bold;
+}
+.header-strip-nav{
+	width: 40%;
+}
+/*.main-header{
 	background-color: #eee; 
     display: grid;
 	grid-template-columns: auto 10% 10% 10%;
 	grid-template-rows: 100%, 100%;
 	grid-template-areas: 
 		'main-header-col1 main-header-col2' 'main-header-col3' 'main-header-col4' 'main-header-col5'
-}
+}*/
 .main-header-sticky{
 	position: sticky;
 	top: 63px;	
@@ -213,12 +230,26 @@ input[type='button']{
 	background-color: lightgray;
 	padding: 10px;
 }
-	iframe{
-		width: inherit;
-		height: inherit;
-	}
 
-@media screen and (max-width: 412px){
+iframe{
+	width: inherit;
+	height: inherit;
+}
+
+@media screen and (max-width: 413px){
+	.header-strip{
+		display: block; 
+	}
+	.header-strip-logo{
+		width: 70%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.header-strip-nav{
+		width: 70%;
+		margin: 0px;
+		padding: 0px;		
+	}	
 	.main-section-3{
 	    height: 410px;
 	    width: 390px;
@@ -238,7 +269,7 @@ input[type='button']{
 	}
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 376px){
 	.main-header{
 		grid-template-areas: 
 			'main-header-col1 main-header-col1 main-header-col1 main-header-col1'
@@ -253,7 +284,7 @@ input[type='button']{
 	}
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 361px){
 	.main-header{
 		grid-template-columns: auto 10% 10% 10%;
 		grid-template-rows: 100% 100%;
@@ -262,13 +293,13 @@ input[type='button']{
 			'main-header-col3 main-header-col4 main-header-col5 main-header-col15'
 	}
 	.main-section-3{
-		width: 95%;
+		width: 90%;
 		height: 310px;
 	}
 	.main-section-4{
 	    justify-content: center;
 	    display: grid;
-	    grid-template-columns: 100%;
+	    grid-template-columns: 95%;
 	    grid-template-rows: 400px 400px 400px;
 	    grid-template-areas: 
 		    'main-section-4-r1c1' 

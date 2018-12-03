@@ -13,6 +13,9 @@ gulp.task('serve', function(cb) {
     gulp.watch("*.html").on('change', browserSync.reload);
     gulp.watch("src/app/*.html").on('change', browserSync.reload);
     gulp.watch("src/app/*.js").on('change', browserSync.reload);
+
+    gulp.watch("fcc-product-landing/style/*.css").on('change', browserSync.reload);
+    gulp.watch("fcc-product-landing/*.html").on('change', browserSync.reload);
 	cb();
 });
 
