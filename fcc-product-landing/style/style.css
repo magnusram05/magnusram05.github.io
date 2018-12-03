@@ -1,0 +1,312 @@
+html{
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+	font-family: 'Noto Sans SC', sans-serif;
+	/*background: linear-gradient(45deg, #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */*/
+	overflow-y: scroll;
+	background-color: #eee; 
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+	position: relative;	
+}
+
+h1,h2,p{
+	margin: 0px;
+	padding: 0px;
+}
+
+header{
+	background: linear-gradient(45deg, #606c88 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	height: 60px;
+	width: 100%;
+	border-bottom: 3px solid #28343b;
+    position: sticky;
+    top: 0px;	
+}
+
+footer {
+	display: none;
+	position: absolute;
+	height: 60px;
+	background: linear-gradient(45deg, #606c88 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	bottom: 0;	
+	width: 100%;
+	margin: auto;
+	border-top: 3px solid #28343b;
+}
+
+.content-style {
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #28343b;	
+}
+.main-header{
+	background-color: #eee; 
+    display: grid;
+	grid-template-columns: auto 10% 10% 10%;
+	grid-template-rows: 100%, 100%;
+	grid-template-areas: 
+		'main-header-col1 main-header-col2' 'main-header-col3' 'main-header-col4' 'main-header-col5'
+}
+.main-header-sticky{
+	position: sticky;
+	top: 63px;	
+}
+
+.main-header-col1{
+	grid-area: 'main-header-col1';
+	text-align: left;	
+	display: flex;
+	align-items: center;
+}
+.main-header-col2{
+	/*grid-area: 'main-header-col2';*/
+	text-align: left;
+	font-size: 32px;	
+}
+.main-header-col3{
+	grid-area: 'main-header-col3';
+	font-weight: normal;
+	display: flex;
+	align-items: center;
+}
+.main-header-col4{
+	grid-area: 'main-header-col4';
+	font-weight: normal;
+	display: flex;
+	align-items: center;
+}
+.main-header-col5{
+	grid-area: 'main-header-col5';
+	font-weight: normal;
+	display: flex;
+	align-items: center;
+}
+
+.main-section-1{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+    'main-section-1-col1'
+    'main-section-1-col2'
+    'main-section-1-col3'
+}
+
+.main-section-1-row1{
+	padding: 10px;
+	grid-area: 'main-section-1-col1';
+}
+.main-section-1-row2{
+	padding: 10px;
+	grid-area: 'main-section-1-col2';
+}
+.main-section-1-row3{
+	padding: 10px;
+	grid-area: 'main-section-1-col3';
+}
+
+.main-section-2{
+	display: grid;	
+	grid-template-columns: 30% 70%;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+	    'main-section-2-r1c1 main-section-2-r1c2'
+	    'main-section-2-r2c1 main-section-2-r2c2'
+	    'main-section-2-r3c1 main-section-2-r3c2'
+}
+
+.main-section-2-r1c2, .main-section-2-r2c2, .main-section-2-r3c2{
+	align-self: start;
+	text-align: left;	
+	padding: 10px;
+}
+.main-section-2-r1c1, .main-section-2-r2c1, .main-section-2-r3c1{
+	align-self: start;	
+	padding: 10px;
+}
+.product-desc-hightlight{
+	font-weight: normal;
+}
+
+.section2-col1 {
+	justify-self: right;	
+}
+
+.section2-col2 {
+	justify-self: left;
+	padding-left: 20px;
+}
+
+.main-section-3{
+	margin: auto;
+	max-width: 720px;
+	width: 720px;
+	height: 410px; 
+}
+
+.orange36 {
+	color: orange;
+    font-size: 48px;
+}
+
+.main-section-4{
+	justify-content: center;
+	display: grid;	
+	grid-template-columns: 300px 300px 300px;
+	grid-template-rows: 400px;	
+	grid-template-areas: 
+	    'main-section-4-r1c1 main-section-4-r1c2 main-section-4-r1c3'
+	    
+}
+
+.main-section-4-r1c1, .main-section-4-r1c2, .main-section-4-r1c3 {
+    margin: 10px;
+    display: grid;	
+	grid-template-columns: 100%;
+	grid-template-rows: 40px 80px 170px 60px;
+	border: 1px solid black;	
+}
+
+.center-content, .center-content-bg{
+	height: 40px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-self: center;	
+}
+
+.center-content-bg {
+	align-items: center;
+	background-color: lightgray;
+}
+
+.product-price{
+	font-weight: bold;
+	font-size: 36px;
+}
+
+input[type='button']{
+    background: orange;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    border-radius: 2px;
+}
+
+.msf {
+	display: inline-block;
+	margin: 5px;
+}
+
+.main-section-footer{
+	text-align: right;
+	width: 70%;
+	margin: auto;
+	background-color: lightgray;
+	padding: 10px;
+}
+	iframe{
+		width: inherit;
+		height: inherit;
+	}
+
+@media screen and (max-width: 412px){
+	.main-section-3{
+	    height: 410px;
+	    width: 390px;
+	}	
+	.main-section-4{
+	    justify-content: center;
+	    display: grid;
+	    grid-template-columns: 100%;
+	    grid-template-rows: 400px 400px 400px;
+	    grid-template-areas: 
+		    'main-section-4-r1c1' 
+		    'main-section-4-r1c2' 
+		    'main-section-4-r1c3';
+	}
+	.main-section-footer{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.main-header{
+		grid-template-areas: 
+			'main-header-col1 main-header-col1 main-header-col1 main-header-col1'
+			'main-header-col3 main-header-col4 main-header-col5 main-header-col5'
+	}
+	.main-section-3{
+		width: 95%;
+		height: 310px;
+	}
+	.main-section-footer{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.main-header{
+		grid-template-columns: auto 10% 10% 10%;
+		grid-template-rows: 100% 100%;
+		grid-template-areas: 
+			'main-header-col1 main-header-col1 main-header-col1 main-header-col1'
+			'main-header-col3 main-header-col4 main-header-col5 main-header-col15'
+	}
+	.main-section-3{
+		width: 95%;
+		height: 310px;
+	}
+	.main-section-4{
+	    justify-content: center;
+	    display: grid;
+	    grid-template-columns: 100%;
+	    grid-template-rows: 400px 400px 400px;
+	    grid-template-areas: 
+		    'main-section-4-r1c1' 
+		    'main-section-4-r1c2' 
+		    'main-section-4-r1c3';
+	}
+	.main-section-footer{
+		text-align: right;
+		width: 320px;
+		margin: auto;
+		background-color: lightgray;
+	}
+	.main-header{
+		background-color: #eee; 
+	    display: grid;
+		grid-template-columns: auto;
+		grid-template-areas: 
+			'main-header-col1' 
+			'main-header-col2' 
+			'main-header-col3' 
+			'main-header-col4' 
+			'main-header-col5'
+	}
+}
+
+@media screen and (max-width: 320px){
+	.main-header{
+		grid-template-columns: auto 10% 10% 10%;
+		grid-template-rows: 100% 100%;
+		grid-template-areas: 
+			'main-header-col1 main-header-col1 main-header-col1 main-header-col1'
+			'main-header-col3 main-header-col4 main-header-col5 main-header-col15'
+	}
+	.main-section-3{
+		width: 95%;
+		height: 310px;
+	}
+	.main-section-footer{
+		width: 80%;
+	}
+}
