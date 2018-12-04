@@ -10,66 +10,48 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>	
-		<header id="header">
+		<header id="header" class="main-header-sticky">
 			<h1 style="font-size: 1.5em">1st Edition Tamil Classics</h1>
-		</header>
-		<main>
-			<section class="main-header-sticky">
-<!-- 					<div class="main-header-col1">
-					    <i class="material-icons orange36">
-						book
-						</i>
-						<span class="main-header-col2">
-						1st edition 
-					    </span>
-					</div>
-					<div class="main-header-col3">
-						Features
-					</div>
-					<div class="main-header-col4">
-						How it works
-					</div>
-					<div class="main-header-col5">
-						Pricing
-					</div>		
-				</div>	 -->	
-					
+		    <section>	
 					<div class="header-strip">
 						<div class="header-strip-logo">
-							<i class="material-icons orange36">
+							<!-- <i id="header-img" class="material-icons orange36">
 							book
-							</i>
+							</i> -->
+							<img  id="header-img" src="./images/product-icon.png" width="48" height="48">
 							<span>
 							1st edition 
 						    </span>
 					    </div>		
-					    <div class="header-strip-nav">			  
+					    <nav id="nav-bar" class="header-strip-nav">			  
 							<div style="width: 30%;display: inline-block; text-align: center;">
-								Features
+								<a href="#features" class="nav-link">Features</a>
 							</div>
 							<div style="width: 35%;display: inline-block; text-align: center;">
-								How it works
+								<a href="#howitworks" class="nav-link">How it works</a>
 							</div>
 							<div style="width: 30%;display: inline-block; text-align: center;">
-								Pricing
+								<a href="#pricing" class="nav-link">Pricing</a>
 							</div>	
-						<div>				
-					</div>	
+						</nav>
+					</div>
 			</section>
+		</header>
+		<main>
 			<section>
-				<div class="main-section-1 content-style">
+				<form id="form" action="https://www.freecodecamp.com/email-submit" class="main-section-1 content-style">
 					<div class="main-section-1-row1">
 						<h2>First edition tamil classics</h2>
 					</div>
 					<div class="main-section-1-row1">
-						<input type="text" name="email" placeholder="Enter your email address" style="font-weight: bold; padding: 5px;">
+						<input id="email" type="email" name="email" placeholder="Enter your email address" style="font-weight: bold; padding: 5px;">
 					</div>
 					<div class="main-section-1-row1">
-						<input type="button" name="Select" value="Get Started" style="font-weight: bold;">
+						<input id="submit" type="submit" name="Select" value="Get Started" style="font-weight: bold;">
 					</div>								
-				</div>
+				</form>
 			</section>
-			<section>
+			<section  id="features">
 				<div class="main-section-2 content-style">
 					<div class="main-section-2-r1c1 section2-col1">
 						<i class="material-icons orange36">
@@ -100,12 +82,12 @@
 					</div>										
 				</div>
 			</section>	
-            <section>
+            <section id="howitworks">
 	            <div class="main-section-3 content-style">
-	<iframe  src="https://www.youtube.com/embed/U05NaI3oEpY?list=PLv8swVj8_C7FbxaBnQ1u7Adb2gT7g_zkq" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe id="video"  src="https://www.youtube.com/embed/U05NaI3oEpY?list=PLv8swVj8_C7FbxaBnQ1u7Adb2gT7g_zkq" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>		
             </section>
-			<section>
+			<section id="pricing">
 				<div class="main-section-4 content-style">
 					<div class="main-section-4-r1c1">
 						<div class="center-content center-content-bg">சிவகாமியின் சபதம்</div>
