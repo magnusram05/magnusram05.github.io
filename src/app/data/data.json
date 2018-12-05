@@ -67,18 +67,18 @@
 			},{
 				"dayof100": "Day 1-6 of 100",
 				"date": "11/8/2018 - 11/13/2018",
-				"description": "FreeCodeCamp: Responsive Web Design Certification.  Tribute page:",
+				"description": "FreeCodeCamp: Responsive Web Design Certification and Tribute page",
 				"image": {
 					"url": "",
 					"displayText": "Image"
 				},
 				"project": {
 					"url": "https://codepen.io/magnusram05/full/jQVjQx",
-					"displayText": "Surver Form"
+					"displayText": "Tribute page"
 				},
 				"external": {
 					"url": "https://learn.freecodecamp.org/",
-					"displayText": "FreeCodeCamp: Responsive Web Design Certification"
+					"displayText": "Responsive Web Design Certification"
 				}
 			}
 		]
