@@ -1,6 +1,22 @@
     {"data": {
         "round": "Round 1",
         "days": [{
+				"dayof100": "Day 21-27 of 100",
+				"date": "11/28/2018 - 12/05/2018",
+				"description": "FreeCodeCamp: Responsive Web Design Projects - Product landing page",
+				"image": {
+					"url": "",
+					"displayText": "Image"
+				},
+				"project": {
+					"url": "https://magnusram05.github.io/fcc-product-landing/",
+					"displayText": "Product landing page"
+				},
+				"external": {
+					"url": "https://github.com/magnusram05",
+					"displayText": "Git repo"
+				}
+			},{
 				"dayof100": "Day 15-20 of 100",
 				"date": "11/22/2018 - 11/27/2018",
 				"description": "Created a UI project to test API endpoints by comparing actual with expected JSON.",
@@ -17,7 +33,7 @@
 					"displayText": "Git repo"
 				}
 			},{
-				"dayof100": "Day 10/11/12/13/14 of 100",
+				"dayof100": "Day 10-14 of 100",
 				"date": "11/17/2018 - 11/21/2018",
 				"description": "Created #100daysofcode blog site and static hosted in GitHub Pages.",
 				"image": {
@@ -33,9 +49,9 @@
 					"displayText": "GitHub Pages"
 				}
 			},{
-				"dayof100": "Day 7/8/9 of 100",
+				"dayof100": "Day 7-9 of 100",
 				"date": "11/14/2018 - 11/16/2018",
-				"description": "FreeCodeCamp - Project 2: Survery Form",
+				"description": "FreeCodeCamp: Responsive Web Design Projects - Survery Form",
 				"image": {
 					"url": "https://via.placeholder.com/150",
 					"displayText": "Image"
