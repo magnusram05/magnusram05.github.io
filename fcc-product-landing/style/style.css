@@ -215,7 +215,7 @@ footer {
 	font-size: 36px;
 }
 
-input[type='submit']{
+input[type='submit'], input[type='button']{
     background: orange;
     border: 0;
     padding: 10px;
