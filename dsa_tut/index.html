@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FCC-Technical Documentation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="left-nav">
+            <div class="nav-header"><h1>Data Structures</h1>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#BigO">BigO</a></li>
+                <li><a href="#Arrays">Arrays</a></li>
+                <li><a href="#LinkedList">LinkedList</a></li>
+                <li><a href="#Stacks__Queues">Stacks and Queues</a></li>
+                <li><a href="#Polymorphism">Polymorphism</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <div class="main-area">
+            <section id="BigO" class="main-section">
+                <h2>BigO</h2>
+                <h3>What?</h3>
+                <ul>
+                    <li>A notation to express time and space complexity of algorithms</li>
+                </ul>
+                <h3>Why?</h3>
+                <ul>
+                    <li>Standardized measure to quantify algorithm efficiency</li>
+                </ul>
+                <h3>How?</h3>
+<ul>
+    <li>Linear Time: <em>O(n+n)=O(n)</em></li>
+</ul>
+<pre>
+<code>
+for(int i=0;i&lt;arr.length;i++){
+    //operations - O(n)				
+}
+for(int i=0;i&lt;arr.length;i++){
+    //operations - O(n)				
+}
+</code>
+</pre>
+
+<ul>
+    <li>Quadratic Time: <em>O(n * n)=O(n^2)</em></li>
+</ul>
+
+<pre>
+<code>
+for (int i=0;i&lt;arr.length;i++) {            	    
+    for (int j=0;j&lt;arr.length;j++) {
+        //operations - O(n * n)
+    }				
+}
+</code>
+</pre>
+                <ul>
+                    <li>Looping through 2 data structures of varying size: <em>O(n+m)</em></li>
+                </ul>
+<pre>
+<code>
+while (counter < i)
+i-- //O(n)
+						
+while (counter < j)
+j-- //O(m)
+</code>
+</pre>
+                <ul>
+                    <li>Drop the constants in comparison to O(n): <em>O(n+n) = O(n)</em></li>
+                </ul><pre>
+                <code>
+while (counter &lt; i) {
+ counter-- // O(n)
+ if(counter %2 == 0) // O(1)
+}
+</code></pre>
+            </section>
+            <section id="Arrays">
+                <h2>Arrays</h2>
+                <h3>What?</h3>
+                <ul>
+                    <li>Index based <strong>fixed capacity</strong> data structure</li>
+                </ul>
+                <h3>Why?</h3>
+                <ul>
+                    <li>Fast random access</li>
+                </ul>
+                <h3>How?</h3>
+                <ul>
+                    <li>
+                        <p>Primitive data structure<br />
+                            | 0 | 1 | 2 | 3 | 4 |</p>
+                    </li>
+                    <li>
+                        Insert at index 2:<br />
+<pre>
+<code>
+if (size == capacity){
+	create new array with double the capacity;
+	copy contents of old array to new array;
+	point old array to new array;
+}
+
+for(int j=2;j<=length;j++){
+
+	<strong>Iteration - 1</strong>
+	nextValue=array[j]; //nextValue=2
+	array[j]=newValue; //array[2]=5
+	newValue=nextValue; //newValue=2
+
+	<strong>Iteration - 2</strong>
+	nextValue=array[j]; //nextValue=3
+	array[j]=newValue; //array[3]=2
+	newValue=nextValue; //newValue=3
+
+	<strong>Iteration - 3</strong>
+	nextValue=array[j]; //nextValue=4
+	array[j]=newValue; //array[4]=3
+	newValue=nextValue; //newValue=4
+
+	<strong>Iteration - 4</strong>
+	nextValue=array[j]; //nextValue=0
+	array[j]=newValue; //array[5]=4
+	newValue=nextValue; //newValue=0
+
+}
+
+set value at 2;
+set capacity = 2*initial_capacity;
+set size = size+1;
+
+</code>
+</pre>
+                    </li>
+                    <li>
+                        <p>Delete data at index 2:<br />
+                            <code>for(int j=2;j&lt;length-1;j++){</code><br />
+                            <code>array[j]=array[j+1];</code></p>
+                    </li>
+                </ul>
+                <h3>Where?</h3>
+                <ul>
+                    <li>ArrayList is an API implemention on top of Arrays providing convenience methods for dynamic resizing and other operations.</li>
+                </ul>
+                <h3>Time complexity</h3>
+                <ul>
+                    <li>Get/Set - O(1)</li>
+                    <li>Insert/Delete - O(n)</li>
+                </ul>
+            </section>
+            <section id="LinkedList" class="main-section">
+                <h2>LinkedList</h2>
+                <h3>What?</h3>
+                <ul>
+                    <li>List of linked nodes with unlimited capacity</li>
+                </ul>
+                <h3>Why?</h3>
+                <ul>
+                    <li>To maintain insertion order</li>
+                    <li>Fast add/remove from tail/head respectively for Queue</li>
+                    <li>Fast push/pop from top for stacks</li>
+                </ul>
+                <h3>How?</h3>
+                <ul>
+                    <li>Head -&gt; Node1 -&gt; Node2 -&gt; Tail -&gt; NULL</li>
+                    <li>Add an element to queue<br />
+                        <code>Tail.next = NewNode;</code><br />
+                        <code>NewNode.next = null;</code><br />
+                        <code>Tail = NewNode;</code></li>
+                    <li>Remove an element from queue<br />
+                        <code>data = Head.data;</code><br />
+                        <code>Head = Head.next;</code><br />
+                        <code>return data;</code></li>
+                    <li>Push an element to stack<br />
+                        <code>NewNode.next = Head;</code><br />
+                        <code>Head = NewNode;</code></li>
+                    <li>Pop an element from stack<br />
+                        <code>data = Head.data;</code><br />
+                        <code>Head = Head.next;</code><br />
+                        <code>return data;</code></li>
+                </ul>
+                <h3>Where?</h3>
+                <ul>
+                    <li>Stacks and Queues</li>
+                </ul>
+                <h3>Time complexity</h3>
+                <ul>
+                    <li>Add/Remove from front/back - O(1)</li>
+                    <li>Insert anywhere else/Search - O(n)</li>
+                </ul>
+            </section>
+            <section id="Stacks__Queues">
+                <h2>Stacks &amp; Queues</h2>
+                <h3><a id="What_SQ"></a>What?</h3>
+                <ul>
+                    <li>Stack - Push and Pop from top</li>
+                    <li>Queue - Add to tail and remove from head</li>
+                </ul>
+                <h3><a id="Why_SQ"></a>Why?</h3>
+                <ul>
+                    <li>Used to implement LIFO &amp; FIFO respectively</li>
+                </ul>
+                <h3><a id="How_SQ"></a>How?</h3>
+                <ul>
+                    <li>
+                        <p>Typically implemented using LinkedList</p>
+                        <ul>
+                            <li>
+                                <p>Head -&gt; Node1 -&gt; Node2 -&gt; Tail -&gt; NULL</p>
+                            </li>
+                            <li>
+                                <h3><a id="Stack"></a>Stack:</h3>
+                                <p><em>Pop</em><br>
+                                    <code>data = Head.data;</code><br>
+                                    <code>Head = Head.next;</code><br>
+                                    <code>return data;</code><br>
+                                    <em>Push</em><br>
+                                    <code>NewNode.next = Head;</code><br>
+                                    <code>Head = NewNode;</code></p>
+                            </li>
+                            <li>
+                                <h3><a id="Queue"></a>Queue:</h3>
+                                <p><em>Add</em><br>
+                                    <code>Tail.next = NewNode;</code><br>
+                                    <code>NewNode.next = null;</code><br>
+                                    <code>Tail = NewNode;</code><br>
+                                    <em>Remove</em><br>
+                                    <code>data = Head.data;</code><br>
+                                    <code>Head = Head.next;</code><br>
+                                    <code>return data;</code></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3><a id="Stack_Queue_Time_complexity"></a>Time complexity:</h3>
+                <ul>
+                    <li>Add/Remove from front/back - O(1)</li>
+                    <li>Insert anywhere else/Search - O(n)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
