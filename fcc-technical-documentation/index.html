@@ -2,54 +2,99 @@
 <html>
 <head>
 	<title>FCC-Technical Documentation</title>
-</head>
-<body>
-<header>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-</header>
-<div class="grid-container">
-	<nav>
+</head>
+<body>
+    <nav id="navbar">
 		<div class="left-nav">
-			<div class="nav-header"><h1>Documentation</h1></div>
-			<ul>
-				<li>Section 1</li>
-				<li>Section 2</li>
-				<li>Section 3</li>
-				<li>Section 4</li>
-				<li>Section 5</li>								
+		    <div class="nav-header"><h1>Java OOP</h1></div>
+			<ul class="nav-list">
+				<li><a href="#Object_Oriented_Programming">Object Oriented Programming</a></li>			
+				<li><a href="#Encapsulation">Encapsulation</a></li>
+				<li><a href="#Abstraction">Abstraction</a></li>
+				<li><a href="#Inheritance">Inheritance</a></li>
+				<li><a href="#Polymorphism">Polymorphism</a></li>	
 			</ul>
-		</div>		
-	</nav>
-	<main>
+		</div>
+    </nav>
+	<main id="main-doc">
 		<div class="main-area">
-			<section>
-			    <h2>Section 1</h2>
+		    <section id="Object_Oriented_Programming" class="main-section">
+			    <h2>Object Oriented Programming</h2>
+			    <p>Modeling real world objects in programs is the core philosophy of object oriented programming.  Characteristics and functionality makes each class of object unique.  For e.g. Book is an object.  It has the following characteristics</p>
+			    <ul class="section-list">
+			    	<li>Title</li>			    	
+			    	<li>ISBN - a unique identifier</li>
+			    	<li>Author</li>			    	
+			    	<li>No. of pages</li>
+			    	<li>Genere</li>			    	
+			    </ul>
+			    <pre>			    
+<code>
+public class Book {
+	private String title;
+	private String isbn;
+	private String author;
+	private String genre;
+	private String noofpages;
+}
+</code>
+			    </pre> 
+			</section>
+			<section id="Encapsulation" class="main-section">
+			    <h2>Encapsulation</h2>
+			    <p>Protecting the characteristics or state of an object after its creation is called encapsulation.  This is important for creating reliable software programs that are immune to inadvertent misuse of object state.  For eg.: After creating a Book object, Angels and Demons, from the class Book described above to be listed in the product search page of our website, its characteristics should not be altered in any way.  This is accomplished by making the characteristics (variables) private.</p>
 			    <p>TBD</p>
-		    </section>
-		    	<section>
-			    <h2>Section 2</h2>
+			    <pre>			    
+<code>
+public class Book {
+
+	//Creation
+	public Book(String title, String isbn, String author, String genre, long noofpages){
+	    this.title = title;
+	    this.isbn = isbn;
+	    this.author = author;
+	    this.genre = genre;
+	    this.noofpages = noofpages;
+	}
+
+	//private variables
+	private String title;
+	private String isbn;
+	private String author;
+	private String genre;
+	private long noofpages;
+}
+</code>
+			    </pre> 	    
+			</section>
+			<section id="Abstraction" class="main-section">
+			    <h2>Abstraction</h2>
 			    <p>TBD</p>
-		    </section>
-		    <section>
-			    <h2>Section 3</h2>
 			    <p>TBD</p>
-		    </section>
-		    <section>
-			    <h2>Section 4</h2>
+			    <code>
+			    </code>			    
+			</section>
+			<section id="Inheritance" class="main-section">
+			    <h2>Inheritance</h2>
 			    <p>TBD</p>
-		    </section>
-		    <section>
-			    <h2>Section 5</h2>
 			    <p>TBD</p>
-		    </section>
+			    <code>
+			    </code>			    
+			</section>
+			<section id="Polymorphism" class="main-section">
+			    <h2>Polymorphism</h2>
+			    <p>TBD</p>
+			    <p>TBD</p>
+			    <code>
+			    </code>			    
+			</section>
 		</div>	
-	</main>
-</div>
-<footer></footer>
+    </main>
 </body>
 </html>
