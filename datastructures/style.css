@@ -101,7 +101,6 @@ header{
     	width: fit-content;
     }
     pre{
-    	display: none;
+    	white-space:pre-wrap;
     }
-
 }
