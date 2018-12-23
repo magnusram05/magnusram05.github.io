@@ -100,8 +100,8 @@ header{
     	margin: 0px;
     	width: fit-content;
     }
+    pre{
+    	display: none;
+    }
 
-    pre {
-	    max-width: 80%;
-	}
 }
