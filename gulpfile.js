@@ -22,6 +22,9 @@ gulp.task('serve', function(cb) {
 	
     gulp.watch("datastructures/*.css").on('change', browserSync.reload);
     gulp.watch("datastructures/*.html").on('change', browserSync.reload);
+
+    gulp.watch("algorithms/*.css").on('change', browserSync.reload);
+    gulp.watch("algorithms/*.html").on('change', browserSync.reload);
 	cb();
 });
 

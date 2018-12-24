@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Datastructures - Technical Documentation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+      <!--   <div class="left-nav"> -->
+            <div class="nav-header"><header>Algorithms</header>
+            </div>
+            <hr>
+            <ul class="nav-list">
+                <li><a href="#Fibonacci_&_Memoization" class="nav-link">Fibonacci & Memoization</a></li>
+            </ul>
+       <!--  </div> -->
+    </nav>
+    <main id="main-doc">
+        <div class="main-area">
+        <section id="Fibonacci_&_Memoization" class="main-section">
+            <header>Fibonacci & Memoization</header>
+        
+        <article>
+        <h3>What?</h3>
+        <ul>
+            <li>0 1 1 2 3 5 8</li>
+            <li>0 f(0)=1 f(1)=1 f(2)=3 f(3)=3 f(4)=5 f(5)=8</li>
+            <li>f(n) = f(n-1) + f(n-2)</li>
+            <li>Recursive</li>
+            <li><strong>Memoization</strong> is caching the result of old computations needed by new computation</li>
+        </ul>
+        <h3>Why?</h3>
+        <ul>
+            <li>Using recursion to compute fibonacci value for a given number has time complexity of O(2^n) - Exponential time</li>
+            <li>By storing values in an array of previous fibonacci value, recursion is avoided if the value is available. This reduces time taken for computation to O(n)</li>
+        </ul>
+        <h3>How?</h3>
+        <pre><code>int [ ] mem = new int[1001];
+public int fib(n){
+if (n== 0)
+return 1;
+if (n== 1)
+return 1;
+if (mem[n] == 0){
+mem[n] = fib(n-1) + fib(n-2);
+}
+return mem[n];
+}</code></pre>
+        <h3>Time Complexity</h3>
+        <ul>
+            <li>Linear time (using memoization)</li>
+        </ul>
+    </article>
+        </section>        
+        </div>
+    </main>
+</body>
+</html>
