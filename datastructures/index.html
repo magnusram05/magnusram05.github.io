@@ -32,6 +32,7 @@
         <div class="main-area">
             <section id="BigO" class="main-section">
                 <h2>Big O</h2>
+                <article>
                 <h3>What?</h3>
                 <ul>
                     <li>A notation to express time and space complexity of algorithms</li>
@@ -47,10 +48,10 @@
 <pre>
 <code>
 for(int i=0;i&lt;arr.length;i++){
-    //operations - O(n)				
+    //operations - O(n)
 }
 for(int i=0;i&lt;arr.length;i++){
-    //operations - O(n)				
+    //operations - O(n)
 }
 </code>
 </pre>
@@ -61,10 +62,10 @@ for(int i=0;i&lt;arr.length;i++){
 
 <pre>
 <code>
-for (int i=0;i&lt;arr.length;i++) {            	    
+for (int i=0;i&lt;arr.length;i++) {
     for (int j=0;j&lt;arr.length;j++) {
         //operations - O(n * n)
-    }				
+    }
 }
 </code>
 </pre>
@@ -75,7 +76,7 @@ for (int i=0;i&lt;arr.length;i++) {
 <code>
 while (counter < i)
 i-- //O(n)
-						
+
 while (counter < j)
 j-- //O(m)
 </code>
@@ -89,9 +90,11 @@ while (counter &lt; i) {
  if(counter %2 == 0) // O(1)
 }
 </code></pre>
+</article>
             </section>
             <section id="Arrays" class="main-section">
                 <h2>Arrays</h2>
+                <article>
                 <h3>What?</h3>
                 <ul>
                     <li>Index based <strong>fixed capacity</strong> data structure</li>
@@ -168,9 +171,11 @@ set size = size+1;
                     <li>Get/Set - O(1)</li>
                     <li>Insert/Delete - O(n)</li>
                 </ul>
+                </article>
             </section>
             <section id="LinkedList" class="main-section">
                 <h2>Linked List</h2>
+                <article>
                 <h3>What?</h3>
                 <ul>
                     <li>List of linked nodes with unlimited capacity</li>
@@ -222,9 +227,12 @@ return data;
                     <li>Add/Remove from front/back - O(1)</li>
                     <li>Insert anywhere else/Search - O(n)</li>
                 </ul>
+            </article>
             </section>
+
             <section id="Stacks__Queues" class="main-section">
                 <h2>Stacks &amp; Queues</h2>
+                <article>
                 <h3><a id="What_SQ"></a>What?</h3>
                 <ul>
                     <li>Stack - Push and Pop from top</li>
@@ -242,7 +250,9 @@ return data;
                             <li>
                                 <p>Head -&gt; Node1 -&gt; Node2 -&gt; Tail -&gt; NULL</p>
                             </li>
-                        </ul></li></ul>
+                        </ul>
+                    </li>
+                </ul>
                         <ul>
                             <li>
                                 Stack<br></li></ul>                               
@@ -252,14 +262,13 @@ data = Head.data;<br>
 Head = Head.next;<br>
 return data;
 </code></pre>
-                                    
-<pre><code>  
-<strong>Push</strong><br>                                                                 
+
+<pre><code>
+<strong>Push</strong><br>
 NewNode.next = Head;<br>
 Head = NewNode;
 </code></pre>
-                            
-                           
+
 <ul><li>Queue<br></li></ul>
                                 
 <pre><code>
@@ -268,13 +277,13 @@ Tail.next = NewNode;<br>
 NewNode.next = null;<br>
 Tail = NewNode;
 </code></pre>
-                                    
+
 <pre><code>
-<strong>Remove</strong><br>                                        
+<strong>Remove</strong><br>
 data = Head.data;<br>
 Head = Head.next;<br>
 return data;
-</code></pre></p>
+</code></pre>
                             </li>
                         </ul>
                     </li>
@@ -284,9 +293,11 @@ return data;
                     <li>Add/Remove from front/back - O(1)</li>
                     <li>Insert anywhere else/Search - O(n)</li>
                 </ul>
+            </article>
             </section>
             <section id="HashTable" class="main-section">
 <h2>Hash Table</h2>
+<article>
 <h3>What?</h3>
 <ul>
 <li>Data structure for constant time look ups</li>
@@ -333,19 +344,19 @@ then index = 32 % 16 = 2</code></pre>
 <li>Best-case scenario - O(1)</li>
 </ul>
 </li>
-</ul>
+</ul></article>
             </section>            
             <section id="BinaryTree" class="main-section">
                 <h2>Binary Tree</h2>
-                <p>TODO</p>
+                <article>TODO</article>
             </section>
             <section id="BinaryHeap" class="main-section">
                 <h2>Binary Heap</h2>
-                <p>TODO</p>
+                <article>TODO</article>
             </section>
             <section id="Graph" class="main-section">
                 <h2>Graph</h2>
-                <p>TODO</p>
+                <article>TODO</article>
             </section>     
         </div>
     </main>

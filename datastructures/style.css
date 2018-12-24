@@ -94,6 +94,11 @@ pre{
 	padding: 10px;
 	width: 50%;
 	margin: 20px;
+	white-space:pre-wrap;
+}
+
+article{
+	margin-left: 20px;
 }
 
 @media screen and (max-width: 720px){
@@ -109,8 +114,7 @@ pre{
     	margin: 0px;
     	width: fit-content;
     }
-    pre{
-    	white-space:pre-wrap;
-    	width: unset;
+    pre {	
+	    width: unset;
     }
 }
