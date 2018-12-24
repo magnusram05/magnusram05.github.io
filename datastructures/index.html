@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
@@ -17,19 +18,20 @@
             </div>
             <hr>
             <ul class="nav-list">
-                <li><a href="#BigO">BigO</a></li>
-                <li><a href="#Arrays">Arrays</a></li>
-                <li><a href="#LinkedList">LinkedList</a></li>
-                <li><a href="#Stacks__Queues">Stacks and Queues</a></li>
-                <li><a href="#BinaryTree">BinaryTree</a></li>
-                <li><a href="#BinaryHeap">BinaryHeap</a></li>
+                <li><a href="#BigO" class="nav-link">Big O</a></li>
+                <li><a href="#Arrays" class="nav-link">Arrays</a></li>
+                <li><a href="#LinkedList" class="nav-link">Linked List</a></li>
+                <li><a href="#Stacks__Queues" class="nav-link">Stacks and Queues</a></li>
+                <li><a href="#HashTable" class="nav-link">Hash Table</a></li>
+                <li><a href="#BinaryTree" class="nav-link">Binary Tree</a></li>
+                <li><a href="#BinaryHeap" class="nav-link">Binary Heap</a></li>
             </ul>
         </div>
     </nav>
     <main id="main-doc">
         <div class="main-area">
             <section id="BigO" class="main-section">
-                <h2>BigO</h2>
+                <h2>Big O</h2>
                 <h3>What?</h3>
                 <ul>
                     <li>A notation to express time and space complexity of algorithms</li>
@@ -104,8 +106,10 @@ while (counter &lt; i) {
                         <p>Primitive data structure<br />
                             | 0 | 1 | 2 | 3 | 4 |</p>
                     </li>
+                </ul>
+                <ul>
                     <li>
-                        Insert at index 2:<br />
+                        Insert at index 2:<br /></li></ul>
 <pre>
 <code>
 if (size == capacity){
@@ -144,13 +148,17 @@ set size = size+1;
 
 </code>
 </pre>
-                    </li>
+               <ul>                   
                     <li>
-                        <p>Delete data at index 2:<br />
-                            <code>for(int j=2;j&lt;length-1;j++){</code><br />
-                            <code>array[j]=array[j+1];</code></p>
-                    </li>
-                </ul>
+                        <p>Delete data at index 2:<br /> </li></p></li></ul>
+<pre>
+<code>
+    for(int j=2;j&lt;length-1;j++){<br />
+    array[j]=array[j+1];
+</code>
+</pre>
+                
+               
                 <h3>Where?</h3>
                 <ul>
                     <li>ArrayList is an API implemention on top of Arrays providing convenience methods for dynamic resizing and other operations.</li>
@@ -162,7 +170,7 @@ set size = size+1;
                 </ul>
             </section>
             <section id="LinkedList" class="main-section">
-                <h2>LinkedList</h2>
+                <h2>Linked List</h2>
                 <h3>What?</h3>
                 <ul>
                     <li>List of linked nodes with unlimited capacity</li>
@@ -176,22 +184,35 @@ set size = size+1;
                 <h3>How?</h3>
                 <ul>
                     <li>Head -&gt; Node1 -&gt; Node2 -&gt; Tail -&gt; NULL</li>
-                    <li>Add an element to queue<br />
-                        <code>Tail.next = NewNode;</code><br />
-                        <code>NewNode.next = null;</code><br />
-                        <code>Tail = NewNode;</code></li>
-                    <li>Remove an element from queue<br />
-                        <code>data = Head.data;</code><br />
-                        <code>Head = Head.next;</code><br />
-                        <code>return data;</code></li>
-                    <li>Push an element to stack<br />
-                        <code>NewNode.next = Head;</code><br />
-                        <code>Head = NewNode;</code></li>
-                    <li>Pop an element from stack<br />
-                        <code>data = Head.data;</code><br />
-                        <code>Head = Head.next;</code><br />
-                        <code>return data;</code></li>
-                </ul>
+                   <li>Add an element to queue<br /></li></ul>
+                    <pre><code>
+Tail.next = NewNode;<br />
+NewNode.next = null;<br />
+Tail = NewNode;
+                    </code></pre>                        
+                    <ul>
+                    <li>                       
+                    Remove an element from queue<br /></li></ul>
+                    <pre><code> 
+data = Head.data;<br />
+Head = Head.next;<br />
+return data;                        
+                    </code></pre>
+                    <ul>
+                    <li>
+                    Push an element to stack<br /></li></ul>
+                    <pre><code>
+NewNode.next = Head;<br />
+Head = NewNode;                       
+                    </code></pre>
+                    <ul>
+                    <li>
+                    Pop an element from stack<br /></li></ul>
+                    <pre><code>
+data = Head.data;<br />
+Head = Head.next;<br />
+return data;
+                    </code></pre>
                 <h3>Where?</h3>
                 <ul>
                     <li>Stacks and Queues</li>
@@ -224,23 +245,33 @@ set size = size+1;
                             <li>
                                 <h3><a id="Stack"></a>Stack:</h3>
                                 <p><em>Pop</em><br>
-                                    <code>data = Head.data;</code><br>
-                                    <code>Head = Head.next;</code><br>
-                                    <code>return data;</code><br>
+                                    <pre><code>
+data = Head.data;<br>
+Head = Head.next;<br>
+return data;<br>
+                                    </code></pre>
                                     <em>Push</em><br>
-                                    <code>NewNode.next = Head;</code><br>
-                                    <code>Head = NewNode;</code></p>
+                                    <pre><code>                                    
+NewNode.next = Head;<br>
+Head = NewNode;</p>
+                                    </code></pre>
                             </li>
                             <li>
                                 <h3><a id="Queue"></a>Queue:</h3>
                                 <p><em>Add</em><br>
-                                    <code>Tail.next = NewNode;</code><br>
-                                    <code>NewNode.next = null;</code><br>
-                                    <code>Tail = NewNode;</code><br>
+                                    <pre>
+                                    <code>
+Tail.next = NewNode;<br>
+NewNode.next = null;<br>
+Tail = NewNode;
+                                    </code></pre><br>
                                     <em>Remove</em><br>
-                                    <code>data = Head.data;</code><br>
-                                    <code>Head = Head.next;</code><br>
-                                    <code>return data;</code></p>
+                                    <pre>
+                                    <code>
+data = Head.data;<br>
+Head = Head.next;<br>
+return data;
+                                </code></pre></p>
                             </li>
                         </ul>
                     </li>
@@ -251,6 +282,56 @@ set size = size+1;
                     <li>Insert anywhere else/Search - O(n)</li>
                 </ul>
             </section>
+            <section id="HashTable" class="main-section">
+<h2>Hash Table</h2>
+<h3>What?</h3>
+<ul>
+<li>Data structure for constant time look ups</li>
+<li>Analogous to dictionary lookup.</li>
+<li>Key used for alphabet is a number derived from unique attributes of the value</li>
+</ul>
+<h3>Why?</h3>
+<ul>
+<li>Dictionary datastructure used for super fast lookups</li>
+<li>Efficiency is proportional to the available space</li>
+</ul>
+<h3>How?</h3>
+<ul>
+<li>
+<p>Implemented using Array of LinkedList</p>
+</li>
+<li>
+<p>Derive a number (hashcode) using key attributes of the object to be stored (Hash function)</p>
+</li>
+<li>
+<p>Use hashcode as array index</p>
+</li>
+<li>
+<p>If the key is not unique i.e:  array index is not empty, then <strong>collision</strong> is said to have occured</p>
+</li>
+<li>
+<p>In the event of key collision, start chaining the nodes</p>
+</li>
+<li>
+<p>Typical hash function in Java</p>
+</li>
+</ul>
+<pre><code>return 31 * (this.name.hashCode + this.id)</code></pre>
+<ul>
+<li>Moduls (%) operation is used to keep the derived key (array index) within the range</li>
+</ul>
+<pre><code>if capacity of array is 16, then<br>index = hashcode % 16<br><br>Example:<br>if hashcode = 32
+then index = 32 % 16 = 2</code></pre>
+<h3>Time complexity:</h3>
+<ul>
+<li>Get/Set/Delete
+<ul>
+<li>Worst-case scenario: Key collision - O(n)</li>
+<li>Best-case scenario - O(1)</li>
+</ul>
+</li>
+</ul>
+            </section>            
             <section id="BinaryTree" class="main-section">
                 <h2>Binary Tree</h2>
                 <p>TODO</p>

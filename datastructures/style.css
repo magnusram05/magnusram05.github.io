@@ -87,6 +87,15 @@ header{
     background-color: white;
 }
 
+pre{
+	border: 1px solid gray;
+	background-color: lightgray;
+	border-radius: 5px;
+	padding: 10px;
+	width: 50%;
+	margin: 20px;
+}
+
 @media screen and (max-width: 720px){
     .left-nav{
     	display: block;
@@ -102,5 +111,6 @@ header{
     }
     pre{
     	white-space:pre-wrap;
+    	width: unset;
     }
 }
