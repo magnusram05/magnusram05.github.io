@@ -242,36 +242,39 @@ return data;
                             <li>
                                 <p>Head -&gt; Node1 -&gt; Node2 -&gt; Tail -&gt; NULL</p>
                             </li>
+                        </ul></li></ul>
+                        <ul>
                             <li>
-                                <h3><a id="Stack"></a>Stack:</h3>
-                                <p><em>Pop</em><br>
-                                    <pre><code>
-data = Head.data;<br>
-Head = Head.next;<br>
-return data;<br>
-                                    </code></pre>
-                                    <em>Push</em><br>
-                                    <pre><code>                                    
-NewNode.next = Head;<br>
-Head = NewNode;</p>
-                                    </code></pre>
-                            </li>
-                            <li>
-                                <h3><a id="Queue"></a>Queue:</h3>
-                                <p><em>Add</em><br>
-                                    <pre>
-                                    <code>
-Tail.next = NewNode;<br>
-NewNode.next = null;<br>
-Tail = NewNode;
-                                    </code></pre><br>
-                                    <em>Remove</em><br>
-                                    <pre>
-                                    <code>
+                                Stack<br></li></ul>                               
+<pre><code>
+<strong>Pop</strong><br>
 data = Head.data;<br>
 Head = Head.next;<br>
 return data;
-                                </code></pre></p>
+</code></pre>
+                                    
+<pre><code>  
+<strong>Push</strong><br>                                                                 
+NewNode.next = Head;<br>
+Head = NewNode;
+</code></pre>
+                            
+                           
+<ul><li>Queue<br></li></ul>
+                                
+<pre><code>
+<strong>Add</strong><br>
+Tail.next = NewNode;<br>
+NewNode.next = null;<br>
+Tail = NewNode;
+</code></pre>
+                                    
+<pre><code>
+<strong>Remove</strong><br>                                        
+data = Head.data;<br>
+Head = Head.next;<br>
+return data;
+</code></pre></p>
                             </li>
                         </ul>
                     </li>
