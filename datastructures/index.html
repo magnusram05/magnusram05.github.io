@@ -348,7 +348,48 @@ then index = 32 % 16 = 2</code></pre>
             </section>            
             <section id="Binary_Tree" class="main-section">
                 <header>Binary Tree</header>
-                <article>TODO</article>
+                <article>
+<h3>What?</h3>
+<ul>
+<li>Ordered and recursive tree data structure</li>
+<li>Ordered so that each time we traverse down, we can eliminate half of the tree leading to logarthimic search time</li>
+<li>Recursive because binary tree is compose of multiple binary trees</li>
+</ul>
+<h3>Why?</h3>
+<ul>
+<li>Faster key based range and general lookup</li>
+</ul>
+<h3>How?</h3>
+<ul>
+<li>left &lt; root &gt; right</li>
+<li>Terms
+<ul>
+<li>root - top node</li>
+<li>leaf - nodes without children</li>
+<li>parent - nodes with children</li>
+</ul>
+</li>
+<li>2 types of searches
+<ul>
+<li>Breadth first search</li>
+<li>Depth first search</li>
+</ul>
+</li>
+<li>3 types of traversals
+<ul>
+<li>Full - All nodes of level h-1 has 2 child nodes</li>
+<li>Complete - Level 1 to h-1 is complete, h is completed from left to right</li>
+<li>Balanced - Difference between the height of left subtree and right subtree should not be more than 1</li>
+</ul>
+</li>
+</ul>
+<h3>Time Complexity</h3>
+<ul>
+<li>Search - O(log n)</li>
+<li>Insert -  O(log n)</li>
+<li>Delete - O(log n)</li>
+</ul>
+                </article>
             </section>
             <section id="Binary_Heap" class="main-section">
                 <header>Binary Heap</header>
