@@ -35,7 +35,7 @@ section > header{
 	right: 0;
 }*/
 
-.left-nav{
+#navbar{
 	display: inline-block;
 	border-right: 3px solid darkgray;
 	background-color: black;
@@ -48,7 +48,7 @@ section > header{
 	left: 0;
 }
 
-.left-nav > .nav-header {
+#navbar > .nav-header {
 	padding: 10px;padding-left: 25px;
 }
 
@@ -107,7 +107,7 @@ article{
 }
 
 @media screen and (max-width: 640px){
-    .left-nav{
+    #navbar{
     	display: block;
     	position: relative;
     	width: unset;
