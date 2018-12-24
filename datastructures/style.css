@@ -15,14 +15,15 @@ h1, h2, p, code, pre{
 	font-weight: normal;
 }
 
-h2{
+section > header{
 	background-color: black;
     color: white;
 	border-bottom: 5px solid #36383F;
 	padding: 5px;
+	font-size: 1.8em;
 }
 
-header{
+/*header{
 	display: block;
 	background-color: black;
 	height: 60px;
@@ -32,7 +33,7 @@ header{
 	top: 0;
 	left: 0;
 	right: 0;
-}
+}*/
 
 .left-nav{
 	display: inline-block;
@@ -49,6 +50,10 @@ header{
 
 .left-nav > .nav-header {
 	padding: 10px;padding-left: 25px;
+}
+
+.nav-header > header {
+	font-size: 1.5em;
 }
 
 .main-area {
@@ -101,7 +106,7 @@ article{
 	margin-left: 20px;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 640px){
     .left-nav{
     	display: block;
     	position: relative;
