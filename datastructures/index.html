@@ -22,7 +22,7 @@
                 <li><a href="#Linked_List" class="nav-link">Linked List</a></li>
                 <li><a href="#Stacks_&_Queues" class="nav-link">Stacks & Queues</a></li>
                 <li><a href="#Hash_Table" class="nav-link">Hash Table</a></li>
-                <li><a href="#Binary_Tree" class="nav-link">Binary Tree</a></li>
+                <li><a href="#Binary_Search_Tree" class="nav-link">Binary Search Tree</a></li>
                 <li><a href="#Binary_Heap" class="nav-link">Binary Heap</a></li>
                 <li><a href="#Graph" class="nav-link">Graph</a></li>
             </ul>
@@ -346,14 +346,14 @@ then index = 32 % 16 = 2</code></pre>
 </li>
 </ul></article>
             </section>            
-            <section id="Binary_Tree" class="main-section">
-                <header>Binary Tree</header>
+            <section id="Binary_Search_Tree" class="main-section">
+                <header>Binary Search Tree</header>
                 <article>
 <h3>What?</h3>
 <ul>
 <li>Ordered and recursive tree data structure</li>
 <li>Ordered so that each time we traverse down, we can eliminate half of the tree leading to logarthimic search time</li>
-<li>Recursive because binary tree is compose of multiple binary trees</li>
+<li>Recursive because binary tree is composed of multiple binary trees</li>
 </ul>
 <h3>Why?</h3>
 <ul>
@@ -375,11 +375,19 @@ then index = 32 % 16 = 2</code></pre>
 <li>Depth first search</li>
 </ul>
 </li>
-<li>3 types of traversals
+<li>3 types of binary trees
 <ul>
 <li>Full - All nodes of level h-1 has 2 child nodes</li>
 <li>Complete - Level 1 to h-1 is complete, h is completed from left to right</li>
 <li>Balanced - Difference between the height of left subtree and right subtree should not be more than 1</li>
+</ul>
+</li>
+<li>3 types of traversals
+<ul>
+<li>In-order - Left-Node-Right</li>
+<li>Pre-order - Node-Left-Right</li>
+<li>Post-order - Left-Right-Node</li>
+</li>
 </ul>
 </li>
 </ul>
@@ -401,5 +409,6 @@ then index = 32 % 16 = 2</code></pre>
             </section>     
         </div>
     </main>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
