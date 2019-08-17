@@ -102,6 +102,13 @@ label {
     font-weight: bold;
 }
 
+#Contact_Details > section {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 #Professional_Experience>section>ul {
     margin-left: 20px;
     padding-top: 5px;
