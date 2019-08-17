@@ -1,0 +1,150 @@
+body {
+	padding: 10px;
+	max-width: 860px;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+.default-theme {
+	background-color: white;
+}
+
+.dark-theme {
+	background-color: #121212;
+	color: white;
+}
+
+.highlight-primary {
+	background-color: rgb(55, 0, 179, .6);
+	color: white;
+	border-radius: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+.header {
+	text-align: center;
+}
+
+/*.header > #name {
+	font-size: 24px;
+	font-weight: bold;
+}*/
+
+.sec_header {
+	font-weight: bold;
+}
+
+header {
+	font-weight: 
+}
+
+section {
+	padding: 10px;
+	margin: 5px;
+}
+
+.skills_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+ul {
+	padding: 0px 0px 0px 20px;
+	margin: 0px;
+}
+
+.tech_sum_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  grid-auto-rows: 10px;
+}
+
+label {
+	font-weight: bold;
+}
+
+.accomp_title {
+	font-weight: bold;
+	margin: 5px;
+}
+
+#Accomplishments > section > ul {
+	margin-left: 20px;
+}
+
+.prof_exp_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10px 10px 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: 10px;
+}
+
+.prof_exp_grid > ul {
+  grid-column: 1 / span 2;
+}
+
+.prof_exp_align {
+	text-align: right;
+}
+
+.highlight {
+	font-weight: bold;
+}
+
+#Professional_Experience > section > ul {
+	margin-left: 20px;
+	padding-top: 5px;
+}
+
+@media (min-width: 761px) {  
+	.skills_grid{
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  grid-gap: 10px;
+	}
+
+	.tech_sum_grid {
+	  display: grid;
+	  grid-template-columns: 1fr 2fr;
+	  grid-gap: 10px;
+	  grid-auto-rows: 10px;
+	}
+
+	.prof_exp_grid > ul {
+	  grid-column: 1 / span 2;
+	}
+
+	.prof_exp_align {
+	  text-align: right;
+    }
+
+}
+
+@media (max-width: 760px) {
+  .skills_grid {
+	  display: grid;
+	  grid-template-columns: 1fr;
+  }
+
+  .tech_sum_grid {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-template-rows: repeat(24, .5fr);
+	  grid-gap: 10px;
+	  grid-auto-rows: 10px;
+  }
+
+  .prof_exp_grid {
+	  display: block;
+  }
+
+  .prof_exp_align {
+      text-align: left;
+  }
+
+}
+
