@@ -1,8 +1,7 @@
 body {
-	padding: 10px;
-	max-width: 860px;
-	margin: auto;
 	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+	padding: 0px;
 }
 
 .default-theme {
@@ -26,22 +25,41 @@ body {
 	text-align: center;
 }
 
-/*.header > #name {
-	font-size: 24px;
-	font-weight: bold;
-}*/
-
 .sec_header {
 	font-weight: bold;
 }
 
-header {
-	font-weight: 
+#content {
+    position: absolute;
+    top: 96px; 
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-y:scroll;
 }
 
 section {
 	padding: 10px;
 	margin: 5px;
+}
+
+nav {
+    height: 36px;
+}
+
+.nav_grid {
+  background: rgb(55, 0, 179, .6);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  text-align: center;
+}
+
+.nav_grid > a {
+	color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .skills_grid{
@@ -95,9 +113,23 @@ label {
 	font-weight: bold;
 }
 
-#Professional_Experience > section > ul {
+#projects > section > ul {
 	margin-left: 20px;
 	padding-top: 5px;
+}
+
+.footer_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	text-align: center;
+}
+
+#Contact_Details > section {
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 @media (min-width: 761px) {  
@@ -146,5 +178,26 @@ label {
       text-align: left;
   }
 
+  .nav_grid {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-template-rows: repeat(6, 1fr);
+	  grid-gap: 10px;
+	}
+
+	nav {
+      height:220px;
+	}
+
+	#content {
+		top: 330px;
+	}
+
+	.footer_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		text-align: center;
+	}
 }
 
