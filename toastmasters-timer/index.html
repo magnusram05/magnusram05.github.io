@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+	<script type="text/javascript" src="app.js"></script>	
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+</head>
+<body>
+<div class="container">
+	<div class="timer_selection_row">
+		<div>
+			<select id="min_time_sel">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+			</select>
+			<label for="min_time_sel">Min. time</label>
+	    </div>
+	    <div>
+			<select id="max_time_sel">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+			</select>
+			<label for="max_time_sel">Max. time</label>
+	   </div>
+	</div>
+	<div class="button_row">
+		<input type="submit" value="Start" onclick="timer.start()">
+		<input type="submit" value="Stop" onclick="timer.stop()">
+		<input type="submit" value="Reset" onclick="timer.reset()">
+	</div>
+	<div class="time_row">
+		<div id="counter">
+			0
+		</div>
+		<div>
+			<div class="green_dot" id="green_dot">
+				<div id="green_overlay" class="overlay"></div>
+			</div>			
+		</div>
+		<div>
+			<div class="amber_dot" id="amber_dot">
+				<div id="amber_overlay" class="overlay"></div>
+			</div>
+		</div>
+		<div>
+			<div class="red_dot" id="red_dot">
+				<div id="red_overlay" class="overlay"></div>
+			</div>
+		</div>
+	</div>
+	<div class="report_row" id="time-list">
+		<div class="speaker_name_header">
+			Speaker Name
+		</div>
+		<div class="speaker_time_header">
+			Time(s)
+		</div>
+	</div>
+</div>
+</body>
+</html>
