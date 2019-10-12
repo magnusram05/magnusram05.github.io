@@ -6,12 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
 <div class="container">
 	<div class="timer_selection_row">
 		<div>
 			<select id="min_time_sel">
+				<option>0</option>
 				<option>1</option>
 				<option>2</option>
 				<option>3</option>
@@ -44,25 +46,19 @@
 		<div id="counter">
 			0
 		</div>
-		<div>
-			<div class="green_dot" id="green_dot">
-				<div id="green_overlay" class="overlay"></div>
-			</div>			
+		<div id="green_dot">
+			<div id="green_overlay" class="overlay"></div>
 		</div>
-		<div>
-			<div class="amber_dot" id="amber_dot">
-				<div id="amber_overlay" class="overlay"></div>
-			</div>
+		<div id="amber_dot">
+			<div id="amber_overlay" class="overlay"></div>
 		</div>
-		<div>
-			<div class="red_dot" id="red_dot">
-				<div id="red_overlay" class="overlay"></div>
-			</div>
+		<div id="red_dot">
+			<div id="red_overlay" class="overlay"></div>
 		</div>
 	</div>
 	<div class="report_row" id="time-list">
 		<div class="speaker_name_header">
-			Speaker Name
+			Speaker
 		</div>
 		<div class="speaker_time_header">
 			Time(s)

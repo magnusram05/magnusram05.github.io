@@ -30,14 +30,14 @@ var timer = {
 	    var red_overlay = document.getElementById("red_overlay");		    
 
 	    this.minTimeoutId = window.setTimeout(function(){   	        	
-	    	green_overlay.className = "";
+	    	green_overlay.className = "green_dot";
 	    }, minTime);
 	    this.halfTimeoutId = window.setTimeout(function(){
-	    	amber_overlay.className = "";
+	    	amber_overlay.className = "amber_dot";
 	    	green_overlay.className = "overlay";	    	
 	    }, minTime + halfTime);
 	    this.maxTimeoutId = window.setTimeout(function(){
-	    	red_overlay.className = "";
+	    	red_overlay.className = "red_dot";
 	        amber_overlay.className = "overlay";
 	    	green_overlay.className = "overlay";
 	    }, maxTime);
