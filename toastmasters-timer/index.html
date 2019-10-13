@@ -11,6 +11,8 @@
     <meta name="theme-color" content="#2F3BA2" />
 </head>
 <body>
+<div id="header">Toastmaster - Timer</div>
+	
 <div class="container">
 	<div class="timer_selection_row">
 		<div>
@@ -24,7 +26,7 @@
 				<option>6</option>
 				<option>7</option>
 			</select>
-			<label for="min_time_sel">Min. time</label>
+			<label for="min_time_sel">Min. time (min)</label>
 	    </div>
 	    <div>
 			<select id="max_time_sel">
@@ -36,13 +38,22 @@
 				<option>6</option>
 				<option>7</option>
 			</select>
-			<label for="max_time_sel">Max. time</label>
+			<label for="max_time_sel">Max. time (min)</label>
 	   </div>
 	</div>
 	<div class="button_row">
-		<input type="submit" value="Start" onclick="timer.start()">
-		<input type="submit" value="Stop" onclick="timer.stop()">
-		<input type="submit" value="Reset" onclick="timer.reset()">
+		<div class="start_but">
+			<input type="image" value="Start" alt="Start" title="Start"
+			    src="images/icons/start-192x192.png" onclick="timer.start()">
+		</div>
+		<div class="stop_but">
+			<input type="image"  value="Stop" alt="Stop" title="Stop"
+			    src="images/icons/stop-192x192.png" onclick="timer.stop()">
+		</div>
+		<div class="reset_but">
+			<input type="image"  value="Reset" alt="Reset" title="Reset"
+			    src="images/icons/reset-192x192.png" onclick="timer.reset()">
+		</div>	
 	</div>
 	<div class="time_row">
 		<div id="counter">
@@ -63,7 +74,7 @@
 			Speaker
 		</div>
 		<div class="speaker_time_header">
-			Time(s)
+			Time (min)
 		</div>
 	</div>
 	<div>

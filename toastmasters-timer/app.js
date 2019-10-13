@@ -6,14 +6,25 @@ var timer = {
 
 	start: function(){
 		this.reset();
-		this.clock = window.setInterval(function(){
-	    	  var current =document.getElementById("counter").innerHTML;
-	    	  if(current == undefined){
-	    	  	document.getElementById("counter").innerHtml = '0';
-	    	  } else {
-	    	  	document.getElementById("counter").innerHTML =  ''+(parseInt(current) + 1);	    	  	
-	    	  }
-              
+		let time = 0;
+	    let displayTime = 0;
+		this.clock = window.setInterval(function(){		 
+	    	time = time + 1;
+    	  	if(time >= 60){
+    	  		let min = Math.floor(time/60);
+    	  		let sec = time%60;
+    	  		if(sec < 10){
+    	  			sec = "0"+sec;
+    	  		}
+                displayTime = min + ":" + sec;
+    	  	} else {
+    	  		if(time < 10) {
+    	  			displayTime = ":0"+time;
+    	  		} else {
+    	  			displayTime = ":"+time;
+    	  		}
+    	  	}
+    	  	document.getElementById("counter").innerHTML =  displayTime;  	  	
 	    }, 1000);		
 
 		var minTimeSel = document.getElementById("min_time_sel")
