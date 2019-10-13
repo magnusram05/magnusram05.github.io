@@ -204,3 +204,11 @@ input[type='image']:active {
 	display: flex;
 	align-items: flex-end;
 }
+
+@media screen and (max-width: 640px){
+    .container {
+    	left: 0;
+    	right: 0;
+    	padding: 0px;
+    }
+}
